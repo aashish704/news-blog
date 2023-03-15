@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+/* Style the navigation bar */
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+
+/* Navbar links */
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Navbar links on mouse-over */
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+
+/* Current/active navbar link */
+
+.active {
+    background-color: #04AA6D;
+}
+
+.blogTitle {
+    color: #94bbe9;
+    font-size: 100px;
+}
+
+.btngrp {
+    border: none;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-card {
+    -webkit-box-shadow: 4px 3px 13px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 3px 13px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 3px 13px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 300px;
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#product-list-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+
+/* The hero image */
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
